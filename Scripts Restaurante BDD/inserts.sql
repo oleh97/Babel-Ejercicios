@@ -1,17 +1,23 @@
+
+DELETE FROM categorias;
 INSERT INTO categorias (tipo) VALUES
 ("Bebida"),("Entrantes"),("Plato Principal"),("Primer Plato"),("Segundo Plato"),("Postre");
 
+DELETE FROM roles;
 INSERT INTO roles (tipo) VALUES
 ("Cliente"), ("Cliente Vip"), ("Camarero Barra"),
 ("Camarero Mesas"), ("Cocinero"), ("Jefe Cocina"), 
 ("Ayudante Cocina"), ("Gerente");
 
+DELETE FROM estados;
 INSERT INTO estados (tipo) VALUES
 ("Pedido"), ("Cocinando"), ("Cocinado"), ("En Reparto"),
 ("En Preparacion"), ("Preparado");
 
+
+DELETE FROM usuarios;
 INSERT INTO usuarios (rol, usuario, pass) VALUES
-(8,"Paco","pacogerente"), -- Gerente ID = 8
+(8, "Paco", "pacogerente"), -- Gerente ID = 8
 (6, "Ramon", "ramonJefeCocina"), -- Jefe de Cocina ID = 6
 (7, "Julian", "julianBecario"), -- Ayudante de Cocina ID = 7
 (7, "David", "davidBecario"), -- Ayudante de Cocina ID = 7
@@ -38,6 +44,7 @@ INSERT INTO usuarios (rol, usuario, pass) VALUES
 (2, "clienteV2", "1234"), -- Cliente VIP ID = 2
 (2, "clienteV3", "1234"); -- Cliente VIP ID = 2
 
+DELETE FROM platos;
 INSERT INTO platos (categoria, nombre) VALUES
 (1, "Coca-Cola"),
 (2, "Fingers Pollo"),
