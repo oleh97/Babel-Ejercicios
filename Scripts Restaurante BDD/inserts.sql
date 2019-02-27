@@ -74,4 +74,41 @@ ALTER TABLE pedidos AUTO_INCREMENT = 1;
 INSERT INTO pedidos (cliente) VALUES
 (16), (17), (18), (20), (23),(25);
 
+DELETE FROM pedidos_platos;
+ALTER TABLE pedidos_platos AUTO_INCREMENT = 1;
+INSERT INTO pedidos_platos (pedido_id, plato_id, nota) VALUES
+(1,1, "Sin Hielo"),
+(1,6, "Muy hecha"),
+(1,5, null),
+(2,7, null),
+(3,2, null),
+(3,13, null),
+(4,7, null),
+(4,11, null),
+(4,15, "Con Salsa BBQ"),
+(5,12, null),
+(5,17, null),
+(6,1, null),
+(6,18, "Sin Tomate"),
+(6,10, null);
+
+DELETE FROM asignaciones;
+ALTER TABLE asignaciones AUTO_INCREMENT = 1;
+INSERT INTO asignaciones (estado, empleado, pedido_plato_id) VALUES
+(1, null, 1),
+(1, null, 2),
+(1, null, 3),
+(4 , 10, 4),
+(2 , 5, 5),
+( 5, 13, 6),
+( 5, 13, 7),
+(3, 2, 8),
+(2 ,8 , 9),
+( 2, 6, 10),
+( 4, 12, 11),
+( 5, 14, 12),
+( 2, 4, 13),
+( 1, null, 14);
+
+
 
