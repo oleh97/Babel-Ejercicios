@@ -29,3 +29,5 @@ INSERT INTO platos (categoria, nombre) VALUES
 (4, "Tiramisu"),
 (5, "Sopa"),
 (6, "Sandwich Especial");
+
+
