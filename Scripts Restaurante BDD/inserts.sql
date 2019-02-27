@@ -13,6 +13,7 @@ INSERT INTO estados (tipo) VALUES
 ("Pedido"), ("Cocinando"), ("Cocinado"), ("En Reparto"),
 ("En Preparacion"), ("Preparado");
 
+
 DELETE FROM usuarios;
 ALTER TABLE usuarios AUTO_INCREMENT = 1;
 INSERT INTO usuarios (rol, usuario, pass) VALUES
