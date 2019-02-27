@@ -1,4 +1,3 @@
-
 DELETE FROM categorias;
 INSERT INTO categorias (tipo) VALUES
 ("Bebida"),("Entrantes"),("Plato Principal"),("Primer Plato"),("Segundo Plato"),("Postre");
@@ -15,6 +14,7 @@ INSERT INTO estados (tipo) VALUES
 ("En Preparacion"), ("Preparado");
 
 DELETE FROM usuarios;
+ALTER TABLE usuarios AUTO_INCREMENT = 1;
 INSERT INTO usuarios (rol, usuario, pass) VALUES
 (8, "Paco", "pacogerente"), -- Gerente ID = 8
 (6, "Ramon", "ramonJefeCocina"), -- Jefe de Cocina ID = 6
@@ -63,5 +63,9 @@ INSERT INTO platos (categoria, nombre) VALUES
 (4, "Tiramisu"),
 (5, "Sopa"),
 (6, "Sandwich Especial");
+
+DELETE FROM pedidos;
+INSERT INTO pedidos (cliente) VALUES
+(), (), (), (), (),();
 
 
