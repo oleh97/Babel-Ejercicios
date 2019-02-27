@@ -1,14 +1,17 @@
 DELETE FROM categorias;
+ALTER TABLE categorias AUTO_INCREMENT = 1;
 INSERT INTO categorias (tipo) VALUES
 ("Bebida"),("Entrantes"),("Plato Principal"),("Primer Plato"),("Segundo Plato"),("Postre");
 
 DELETE FROM roles;
+ALTER TABLE roles AUTO_INCREMENT = 1;
 INSERT INTO roles (tipo) VALUES
 ("Cliente"), ("Cliente Vip"), ("Camarero Barra"),
 ("Camarero Mesas"), ("Cocinero"), ("Jefe Cocina"), 
 ("Ayudante Cocina"), ("Gerente");
 
 DELETE FROM estados;
+ALTER TABLE estados AUTO_INCREMENT = 1;
 INSERT INTO estados (tipo) VALUES
 ("Pedido"), ("Cocinando"), ("Cocinado"), ("En Reparto"),
 ("En Preparacion"), ("Preparado");
@@ -45,6 +48,7 @@ INSERT INTO usuarios (rol, usuario, pass) VALUES
 (2, "clienteV3", "1234"); -- Cliente VIP ID = 2
 
 DELETE FROM platos;
+ALTER TABLE platos AUTO_INCREMENT = 1;
 INSERT INTO platos (categoria, nombre) VALUES
 (1, "Coca-Cola"),
 (2, "Fingers Pollo"),
@@ -66,7 +70,8 @@ INSERT INTO platos (categoria, nombre) VALUES
 (6, "Sandwich Especial");
 
 DELETE FROM pedidos;
+ALTER TABLE pedidos AUTO_INCREMENT = 1;
 INSERT INTO pedidos (cliente) VALUES
-(), (), (), (), (),();
+(16), (17), (18), (20), (23),(25);
 
 
