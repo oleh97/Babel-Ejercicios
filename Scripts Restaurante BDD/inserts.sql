@@ -10,7 +10,6 @@ INSERT INTO estados (tipo) VALUES
 ("Pedido"), ("Cocinando"), ("Cocinado"), ("En Reparto"),
 ("En Preparacion"), ("Preparado");
 
-<<<<<<< HEAD
 INSERT INTO usuarios (rol, usuario, password) VALUES
 (8,"Paco","pacogerente"), -- Gerente ID = 8
 (6, "Ramon", "ramonJefeCocina"), -- Jefe de Cocina ID = 6
@@ -38,7 +37,7 @@ INSERT INTO usuarios (rol, usuario, password) VALUES
 (2, "clienteV1" "1234"), -- Cliente VIP ID = 2
 (2, "clienteV2" "1234"), -- Cliente VIP ID = 2
 (2, "clienteV3" "1234"); -- Cliente VIP ID = 2
-=======
+
 INSERT INTO platos (categoria, nombre) VALUES
 (1, "Coca-Cola"),
 (2, "Fingers Pollo"),
@@ -58,6 +57,5 @@ INSERT INTO platos (categoria, nombre) VALUES
 (4, "Tiramisu"),
 (5, "Sopa"),
 (6, "Sandwich Especial");
->>>>>>> e3693248daf8447d992ddca8f46b103bb5960c49
 
 
