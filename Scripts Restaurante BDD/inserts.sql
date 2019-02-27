@@ -1,4 +1,4 @@
-INSERT INTO categorias(tipo) VALUES
+INSERT INTO categorias (tipo) VALUES
 ("Bebida"),("Entrantes"),("Plato Principal"),("Primer Plato"),("Segundo Plato"),("Postre");
 
 INSERT INTO roles (tipo) VALUES
@@ -10,6 +10,7 @@ INSERT INTO estados (tipo) VALUES
 ("Pedido"), ("Cocinando"), ("Cocinado"), ("En Reparto"),
 ("En Preparacion"), ("Preparado");
 
+<<<<<<< HEAD
 INSERT INTO usuarios (rol, usuario, password) VALUES
 (8,"Paco","pacogerente"), -- Gerente ID = 8
 (6, "Ramon", "ramonJefeCocina"), -- Jefe de Cocina ID = 6
@@ -37,5 +38,26 @@ INSERT INTO usuarios (rol, usuario, password) VALUES
 (2, "clienteV1" "1234"), -- Cliente VIP ID = 2
 (2, "clienteV2" "1234"), -- Cliente VIP ID = 2
 (2, "clienteV3" "1234"); -- Cliente VIP ID = 2
+=======
+INSERT INTO platos (categoria, nombre) VALUES
+(1, "Coca-Cola"),
+(2, "Fingers Pollo"),
+(3, "Haburguesa de Pollo"),
+(4, "Tarta de Chocolate"),
+(5, "Ensalada"),
+(6, "Hamburguesa Queso"),
+(1, "Cerveza"),
+(2, "Patatas Bravas"),
+(3, "Haburguesa de la Casa"),
+(4, "Bola de Helado"),
+(5, "Espaguetis Boloñesa"),
+(6, "Lomo con Patatas"),
+(1, "Tinto Verano"),
+(2, "Palomitas de Queso"),
+(3, "Costillar 1/2"),
+(4, "Tiramisu"),
+(5, "Sopa"),
+(6, "Sandwich Especial");
+>>>>>>> e3693248daf8447d992ddca8f46b103bb5960c49
 
 
