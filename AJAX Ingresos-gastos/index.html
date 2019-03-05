@@ -9,23 +9,22 @@
 </head>
 
 <body>
-    <label>Añadir gasto : </label>
+    <label>Añadir movimiento : </label>
     <label>Concepto : </label>
-    <input type="text" id="conceptoGasto">
-    <label for="nombreGasto">Cantidad : </label>
-    <input type="number" id="cantidadGasto">
-    <button id="btnGasto">Añadir nuevo gasto</button>
-
-    <label for="nombreGasto">Añadir ingreso : </label>
-    <label for="nombreGasto">Concepto : </label>
-    <input type="text" id="conceptoIngreso">
-    <label for="nombreGasto">Cantidad : </label>
-    <input type="number" id="cantidadIngreso">
-    <button id="btnIngreso">Añadir nuevo ingreso</button>
+    <input type="text" id="concepto">
+    <label for="nombre">Cantidad : </label>
+    <input type="number" id="cantidad">
+    <button id="btn">Añadir</button>
 
     <ul id="lista">
 
     </ul>
+    <div>
+        <p>Gastos Totales: <span id="gastosTotales"></span></p>
+        <p>Ingresos Totales: <span id="ingresosTotales"></span></p>
+        <p>Total: <span id="total"></span></p>
+    </div>
+
     <script src="app.js"></script>
 </body>
 
