@@ -15,9 +15,9 @@ function getIngGas() {
         for(let id in ingresosGastos) {
            if(ingresosGastos[id].qty != undefined){
                 arr.push(ingresosGastos[id])
-                if(ingresosGastos[id].qty < 0) gastosTotales -= parseInt(ingresosGastos[id].qty)
+                if(ingresosGastos[id].qty < 0) gastosTotales -= parseFloat(ingresosGastos[id].qty)
                 else if(ingresosGastos[id].qty > 0) {
-                    ingresosTotales += parseInt(ingresosGastos[id].qty)
+                    ingresosTotales += parseFloat(ingresosGastos[id].qty)
                 }
            }
         }
@@ -28,7 +28,7 @@ function getIngGas() {
         let aTotal = document.getElementById("total");
         aGastos.textContent = " "+gastosTotales;
         aIngresos.textContent = " "+ingresosTotales;
-        aTotal = " " + (parseInt( ingresosTotales) - parseInt( gastosTotales));
+        aTotal.textContent = " " + (parseFloat( ingresosTotales) - parseFloat( gastosTotales));
     })
 }
 
