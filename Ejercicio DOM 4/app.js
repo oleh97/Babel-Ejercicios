@@ -1,11 +1,13 @@
 const ul = document.getElementById("lista");
 const listaLi = document.querySelectorAll("li")
 
-for(i in listaLi){
-    ul.removeChild(listaLi[i]);
+for(li of listaLi){
+    ul.removeChild(li);
 }
 
+var cadena = "";
 for(let i=1; i<6; i++){
-    console.log(i)
-    ul.innerHTML(`<li>${i}</li>`)
+    cadena += `<li>${i}</li>`;
 }
+
+ul.innerHTML = cadena;
