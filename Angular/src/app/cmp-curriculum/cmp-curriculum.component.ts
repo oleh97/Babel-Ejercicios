@@ -40,7 +40,7 @@ export class CmpCurriculumComponent implements OnInit {
 
   addSkill(s: string) {
     this.skills.push(s);
-    //document.getElementById('inputSkill').value = '';
+    (document.getElementById('inputSkill') as HTMLInputElement).value = '';
   }
 
 }
