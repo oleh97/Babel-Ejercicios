@@ -1,0 +1,17 @@
+.contenedor {
+  border: 1px solid black;
+  /*text-align: center;*/
+  margin: 0 auto;
+  width: 90%;
+}
+
+.formulario {
+  border: 1px solid black;
+  text-align: center;
+}
+
+.cv {
+  border: 1px solid black;
+  /*text-align: center;*/
+}
+

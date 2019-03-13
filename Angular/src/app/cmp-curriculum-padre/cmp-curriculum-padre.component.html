@@ -1,0 +1,25 @@
+<h1>EJERCICIO CURRICULUM</h1>
+
+<div class="row contenedor">
+  <h1 class="col-12">Mi CV Interactivo</h1>
+  <div class="col formulario">
+    <app-cmp-curriculum-formulario (nombreIntroducido)="nombre=$event"
+                                   (apellidosIntroducidos)="apellidos=$event"
+                                   (emailIntroducido) ="email=$event"
+                                   (fechaIntroducida)="fecha=$event"
+                                   (imagenIntroducida)="foto=$event"
+                                   (skillsIntroducidos)="skills=$event">
+
+    </app-cmp-curriculum-formulario>
+  </div>
+  <div class="col cv">
+    <app-cmp-curriculum-vista [nombre]="nombre"
+                              [apellidos]="apellidos"
+                              [email]="email"
+                              [fecha]="fecha"
+                              [foto]="foto"
+                              [skills]="skills">
+
+    </app-cmp-curriculum-vista>
+  </div>
+

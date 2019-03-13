@@ -1,0 +1,14 @@
+<div class="row">
+  <h1 class="col-12">{{nombre}} {{apellidos}}</h1>
+  <div class="col-sm-7">
+    <p>Email: {{email}}</p>
+    <p>Fecha de nacimiento: {{fecha}}</p>
+    <p>Skills: </p>
+    <ul>
+      <li *ngFor="let skill of skills">{{skill}}</li>
+    </ul>
+  </div>
+  <div class="col-sm-5">
+    <img src="assets/{{foto}}">
+  </div>
+</div>
