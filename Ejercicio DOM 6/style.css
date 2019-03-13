@@ -1,0 +1,12 @@
+img {
+    width: 180px;
+    height: 280px;
+}
+
+#imgCenter {
+    transform: scale(1.5);
+}
+
+.laterales {
+    transform: scale(0.5);
+}
